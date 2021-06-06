@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>SIMPLE INTEREST</title>
+    <title>Web App - SIMPLE INTEREST CALCULATOR</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
@@ -9,10 +9,9 @@
         <h1>Simple Interest Calculator</h1>
 
         Amount <input type="number" oninput="check()" id="principal">  <br/>
-        Rate <input type="range" onchange="updateRate()" id="rate" min="minval" maxx="maxval" value="default_val">
+        Rate <input type="range" onchange="updateRate()" id="rate" min=1 max=20 value="default_val">
         <span id="rate_val">
-        10.25%
-        </span>  <br/>
+        </span>%  <br/>
         No. of Years 
         <select id="years">
             <option value="1">1</option>
@@ -33,6 +32,6 @@
         </span>
     </div>
     <footer>
-          This Calculator belongs to Aakash Kumar Tomar
+        &#169;  This Calculator belongs to Aakash Kumar Tomar
     </footer>
 </html>
